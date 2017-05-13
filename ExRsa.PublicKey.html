@@ -1,0 +1,290 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.15.1">
+    <title>ExRsa.PublicKey – ExRsa v0.1.0</title>
+    <link rel="stylesheet" href="dist/app-af302bfcc4.css" />
+    
+    <script src="dist/sidebar_items-b2e15d6cab.js"></script>
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+
+    <div class="main">
+<button class="sidebar-toggle">
+  <i class="icon-menu"></i>
+</button>
+<section class="sidebar">
+
+  
+  <a href="readme.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        ExRsa
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+    
+  </a>
+
+  <div class="sidebar-search">
+    <i class="icon-search"></i>
+    <input type="text" class="sidebar-searchInput" placeholder="search" autocomplete="off" />
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">ExRsa v0.1.0</small>
+        ExRsa.PublicKey
+        
+        
+          <a href="https://github.com/llxff/ex_rsa/blob/master/lib/ex_rsa/public_key.ex#L1" title="View Source" class="view-source" rel="help">
+            <i class="icon-code"></i>
+          </a>
+        
+      </h1>
+
+      
+        <section id="moduledoc">
+          <p>Модуль работы с публичными ключами.</p>
+
+        </section>
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <i class="icon-link"></i>
+            </a>
+            Summary
+          </h1>
+          
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#encrypt/2">encrypt(key, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Шифрование данных с помощью публичного ключа</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#extract/1">extract(key)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Получение публичного ключа из приватного</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#from_der/1">from_der(key)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Получение публичного ключа из DER формата</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#to_der/1">to_der(key)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Представление публичного ключа в DER формате</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+        </section>
+      
+
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <i class="icon-link"></i>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="encrypt/2">
+  
+  <div class="detail-header">
+    <a href="#encrypt/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">encrypt(key, data)</span>
+    
+      <a href="https://github.com/llxff/ex_rsa/blob/master/lib/ex_rsa/public_key.ex#L65" class="view-source" rel="help" title="View Source">
+       <i class="icon-code"></i>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Шифрование данных с помощью публичного ключа.</p>
+<h2 id="encrypt/2-examples" class="section-heading">
+  <a href="#encrypt/2-examples" class="hover-link"><i class="icon-link"></i></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; ExRsa.PublicKey.encrypt(public_key, data)
+&lt;&lt;25, 121, 18, 221, 195, 16, 225, 65, 131, 107, 15, 225, 254, 109, 38, 57, 54,
+  115, 112, 213, 253, 196, 55, 131, 69, 152, 123, 225, 71, 105, 243, 220, 171,
+  254, 50, 150, 124, 248, 29, 223, 6, 81, 39, 235, 79, 222, 88, 223, 90, 196,
+  ...&gt;&gt;</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="extract/1">
+  
+  <div class="detail-header">
+    <a href="#extract/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">extract(key)</span>
+    
+      <a href="https://github.com/llxff/ex_rsa/blob/master/lib/ex_rsa/public_key.ex#L19" class="view-source" rel="help" title="View Source">
+       <i class="icon-code"></i>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Получение публичного ключа из приватного.</p>
+<h2 id="extract/1-examples" class="section-heading">
+  <a href="#extract/1-examples" class="hover-link"><i class="icon-link"></i></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; ExRsa.PublicKey.extract(private_key)
+{:RSAPublicKey,
+ 1973840199112548825452935294307235853876...,
+ 257}</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="from_der/1">
+  
+  <div class="detail-header">
+    <a href="#from_der/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">from_der(key)</span>
+    
+      <a href="https://github.com/llxff/ex_rsa/blob/master/lib/ex_rsa/public_key.ex#L50" class="view-source" rel="help" title="View Source">
+       <i class="icon-code"></i>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Получение публичного ключа из DER формата.</p>
+<h2 id="from_der/1-examples" class="section-heading">
+  <a href="#from_der/1-examples" class="hover-link"><i class="icon-link"></i></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; ExRsa.PublicKey.from_der(public_key_der)
+{:RSAPublicKey,
+1973840199112548825452935294307235853876...,
+257}</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="to_der/1">
+  
+  <div class="detail-header">
+    <a href="#to_der/1" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">to_der(key)</span>
+    
+      <a href="https://github.com/llxff/ex_rsa/blob/master/lib/ex_rsa/public_key.ex#L36" class="view-source" rel="help" title="View Source">
+       <i class="icon-code"></i>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Представление публичного ключа в DER формате.</p>
+<h2 id="to_der/1-examples" class="section-heading">
+  <a href="#to_der/1-examples" class="hover-link"><i class="icon-link"></i></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; ExRsa.PublicKey.to_der(public_key)
+&lt;&lt;48, 130, 1, 9, 2, 130, 1, 1, 0, 156, 91, 183, 18, 201, 122, 59, 136, 81, 77,
+  92, 205, 240, 70, 219, 151, 82, 120, 99, 79, 135, 166, 72, 114, 180, 129, 226,
+  48, 109, 52, 95, 174, 91, 200, 63, 99, 172, 138, 176, 164, 243, ...&gt;&gt;</code></pre>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.15.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+        <button class="night-mode-toggle" />
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-e9767fa739.js"></script>
+  </body>
+</html>
+
